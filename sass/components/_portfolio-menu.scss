@@ -19,7 +19,8 @@
   border-radius: 4px;
   border: none;
   padding: 6px 22px;
-  transition: box-shadow $timing-function, background-color $timing-function;
+  transition: box-shadow $timing-function, background-color $timing-function,
+    color $timing-function;
   font-family: $Roboto-font;
   color: $black-text;
   background-color: $booton;

@@ -42,7 +42,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  transition: $timing-function;
+  transition: color $timing-function, border-color $timing-function;
   &:hover {
     color: $blue-text;
     border-color: $blue-text;

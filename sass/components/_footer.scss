@@ -145,8 +145,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: fill $timing-function;
-  transition: background-color $timing-function;
+  transition: fill $timing-function, background-color $timing-function;
   &:focus {
     fill: $white-text;
     background-color: $blue-text;
