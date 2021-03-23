@@ -1,0 +1,28 @@
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+}
+footer {
+  margin: auto;
+  background-color: $footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.font {
+  font-family: $Roboto-font;
+}
+
+.a {
+  display: block;
+}

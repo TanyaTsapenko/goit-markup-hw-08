@@ -1,0 +1,57 @@
+.section-comand {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $booton;
+}
+
+.section-comand__title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-comand__list {
+  display: flex;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.section-comand__list .section-comand__item {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  max-width: 270px;
+  background-color: $white-text;
+}
+.section-comand__list .section-comand__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-comand__name {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: $black-text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 0.03em;
+  align-items: center;
+}
+
+.section-comand__profession {
+  text-align: center;
+  margin: 0 auto;
+  & {
+    color: $gray-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 0.03em;
+    align-items: center;
+  }
+}
+
+.section-comand__worker {
+  padding: 30px 20px;
+}
