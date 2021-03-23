@@ -1,0 +1,48 @@
+.mailing-box {
+  margin: 10px;
+  width: 570px;
+  margin-left: 93px;
+  .mailing-box__tittle {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.4px;
+    text-transform: uppercase;
+    color: $white-text;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .mailing-box__mail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mailing-box__input {
+    color: $white-text;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid $border-input;
+    background-color: $background;
+    border-radius: 4px;
+  }
+  .mailing-box__button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: $blue-text;
+    color: $white-text;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  .mailing-box__icon {
+    fill: $white-text;
+    margin-left: 10px;
+    text-align: center;
+  }
+}
