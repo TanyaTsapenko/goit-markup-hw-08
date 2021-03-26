@@ -1,32 +1,42 @@
 .section-comand {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $booton;
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-
 .section-comand__title {
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   margin-bottom: 50px;
+  @media screen and(min-width:768px) {
+    font-size: 33px;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 36px;
+  }
 }
-
 .section-comand__list {
-  display: flex;
+  display: block;
   padding: 0px;
   margin: 0 auto;
 }
-
 .section-comand__list .section-comand__item {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 3px;
-  max-width: 270px;
   background-color: $white-text;
 }
-.section-comand__list .section-comand__item:not(:last-child) {
-  margin-right: 30px;
+.section-comand__item img {
+  object-fit: cover;
+  height: 460px;
+  max-width: 100%;
 }
-
+.section-comand__list .section-comand__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 .section-comand__name {
   text-align: center;
   margin-bottom: 10px;
@@ -53,5 +63,5 @@
 }
 
 .section-comand__worker {
-  padding: 30px 20px;
+  padding: 30px 36px;
 }

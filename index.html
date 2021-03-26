@@ -31,6 +31,18 @@
           <a class="logo" href="/">
             <span class="logo__text--blue">Web</span>Studio</a
           >
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg width="40" height="40">
+              <use href="./IMG/symbol-defs.svg#icon-menu"></use>
+              <use href="./IMG/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
 
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -204,12 +216,7 @@
           <h2 class="section-comand__title">Наша команда</h2>
           <ul class="section-comand__list">
             <li class="section-comand__item">
-              <img
-                src="./IMG/ProductDesigner.jpg"
-                alt="Член команды "
-                width="270"
-                height="260"
-              />
+              <img src="./IMG/ProductDesigner.jpg" alt="Член команды " />
               <div class="section-comand__worker">
                 <h3 class="section-comand__name">Игорь Демьяненко</h3>
                 <p class="section-comand__profession">Product Designer</p>
@@ -246,12 +253,7 @@
               </div>
             </li>
             <li class="section-comand__item">
-              <img
-                src="./IMG/FrontendDeveloper.jpg"
-                alt="Член команды "
-                width="270"
-                height="260"
-              />
+              <img src="./IMG/FrontendDeveloper.jpg" alt="Член команды " />
               <div class="section-comand__worker">
                 <h3 class="section-comand__name">Ольга Репина</h3>
                 <p class="section-comand__profession">Frontend Developer</p>
@@ -288,12 +290,7 @@
               </div>
             </li>
             <li class="section-comand__item">
-              <img
-                src="./IMG/Marketing.jpg"
-                alt="Член команды "
-                width="270"
-                height="260"
-              />
+              <img src="./IMG/Marketing.jpg" alt="Член команды " />
               <div class="section-comand__worker">
                 <h3 class="section-comand__name">Николай Тарасов</h3>
                 <p class="section-comand__profession">Marketing</p>
@@ -330,12 +327,7 @@
               </div>
             </li>
             <li class="section-comand__item">
-              <img
-                src="./IMG/UIDesigner.jpg"
-                alt="Член команды "
-                width="270"
-                height="260"
-              />
+              <img src="./IMG/UIDesigner.jpg" alt="Член команды " />
               <div class="section-comand__worker">
                 <h3 class="section-comand__name">Михаил Ермаков</h3>
                 <p class="section-comand__profession">UI Designer</p>
@@ -584,7 +576,8 @@
         </form>
       </div>
     </div>
-
+    <div class="menu-container" id="menu-container" data-menu></div>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./Js/modal.js"></script>
   </body>
 </html>

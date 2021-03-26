@@ -2,13 +2,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .page-header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .site-nav {
+}
+.page-header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: $Raleway-font;
+  color: $black-text;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo__text--blue {
+  color: $blue-text;
+}
+.site-nav {
+  display: none;
+  @media screen and(min-width:768px) {
     display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -21,61 +37,16 @@
       margin-right: 0px;
     }
   }
-
-  .site-nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $black-text;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    position: relative;
-    transition: color $timing-function;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $blue-text;
-    }
-  }
-
-  .site-nav__link--current {
-    color: $blue-text;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .site-nav__link::after {
-    content: "";
+}
+.contact {
+  display: none;
+  @media screen and(min-width:768px) {
     display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $blue-text;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity $timing-function;
-  }
-  .site-nav__link:hover::after {
-    opacity: 1;
-  }
-  .site-nav__link:focus::after {
-    opacity: 1;
-  }
-  .site-nav__link--current::after {
-    opacity: 1;
-  }
-
-  .contact {
-    display: flex;
-    margin: 0px;
+    margin-right: 0px;
     padding: 0px;
     list-style: none;
   }
   .contact__email {
-    display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -96,20 +67,119 @@
     }
   }
   .contact__item:last-child {
-    margin-left: 50px;
+    margin-left: 0px;
+    @media screen and(min-width:1200px) {
+      margin-left: 30px;
+    }
   }
   .contact__item:first-child {
     margin: 0 auto;
   }
-
-  .contact__icon {
-    fill: currentColor;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  @media screen and(min-width:1200px) {
+    .contact {
+      display: flex;
+      @media screen and(min-width:768px) {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      .contact__email {
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: $gray-text;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        transition: color $timing-function;
+        &:focus {
+          color: $blue-text;
+        }
+        &:hover {
+          color: $blue-text;
+        }
+      }
+      .contact__item:last-child {
+        margin-left: 0px;
+      }
+      .contact__item:first-child {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.site-nav__link {
+  @media screen and (min-width: 768px) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  color: $black-text;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  position: relative;
+  transition: color $timing-function;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue-text;
   }
 }
 
-.page-header {
-  border-bottom: 1px solid $border-header;
+.site-nav__link--current {
+  color: $blue-text;
+  font-size: 14px;
+  text-decoration: none;
+}
+.site-nav__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $blue-text;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity $timing-function;
+}
+.site-nav__link:hover::after {
+  opacity: 1;
+}
+.site-nav__link:focus::after {
+  opacity: 1;
+}
+.site-nav__link--current::after {
+  opacity: 1;
+}
+.contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
 }
