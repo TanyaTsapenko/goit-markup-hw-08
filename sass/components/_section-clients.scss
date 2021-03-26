@@ -11,16 +11,13 @@
   letter-spacing: 0.03em;
 }
 .clients__list {
-  @media screen and(max-width:480px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
   padding: 0px;
   justify-content: center;
 }
 
 .clients__item {
-  height: 90px;
   width: 210px;
   display: flex;
   border-radius: 4px;

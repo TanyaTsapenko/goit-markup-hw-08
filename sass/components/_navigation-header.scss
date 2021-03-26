@@ -176,10 +176,19 @@
   width: 16px;
   height: 16px;
 }
-.menu-button {
+.menu-toggle {
   display: inline-flex;
   margin: 0px;
   padding: 0px;
   border: none;
   background-color: transparent;
+}
+.menu-toggle .icon-close {
+  display: none;
+}
+.menu-toggle.js-open-menu .icon-close {
+  display: block;
+}
+.menu-toggle.js-open-menu .icon-menu {
+  display: none;
 }

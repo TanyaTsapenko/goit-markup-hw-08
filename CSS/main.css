@@ -308,7 +308,7 @@ a {
   height: 16px;
 }
 
-.menu-button {
+.menu-toggle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -316,6 +316,18 @@ a {
   padding: 0px;
   border: none;
   background-color: transparent;
+}
+
+.menu-toggle .icon-close {
+  display: none;
+}
+
+.menu-toggle.js-open-menu .icon-close {
+  display: block;
+}
+
+.menu-toggle.js-open-menu .icon-menu {
+  display: none;
 }
 
 .hero {
@@ -530,24 +542,18 @@ a {
 }
 
 .clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 .clients__item {
-  height: 90px;
   width: 210px;
   display: -webkit-box;
   display: -ms-flexbox;
