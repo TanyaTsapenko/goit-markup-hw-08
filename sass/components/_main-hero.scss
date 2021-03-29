@@ -1,3 +1,23 @@
+.hero__title {
+  text-align: center;
+  margin: 0 auto;
+  color: $white-text;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 0.06em;
+  align-items: center;
+  @media screen and(min-width:1200px) {
+    text-align: center;
+    margin: 0 auto;
+    color: $white-text;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    align-items: center;
+  }
+}
 .hero {
   background-color: $background;
   padding: 200px 0;
@@ -8,16 +28,7 @@
   background-size: cover;
   height: 600px;
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  .hero__title {
-    text-align: center;
-    margin: 0 auto;
-    color: $white-text;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    letter-spacing: 0.06em;
-    align-items: center;
+  @media (min-resolution: 2dppx) {
+    background-image: url(/IMG/banner@2x.jpg);
   }
 }
